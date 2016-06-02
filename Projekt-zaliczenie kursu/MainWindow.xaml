@@ -1,0 +1,165 @@
+﻿<Window x:Class="Projekt_zaliczenie_kursu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_zaliczenie_kursu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="550">
+    <TabControl>
+        <TabItem Header="Dodawanie artykułów" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <ListView Name ="ListView1" Margin="5" Grid.Column="0" ItemsSource="{Binding MagazynList}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Przedmiot" Width="90" DisplayMemberBinding="{Binding Przedmiot}"/>
+                            <GridViewColumn Header="Ilość" Width="30" DisplayMemberBinding="{Binding Ilosc}"/>
+                            <GridViewColumn Header="Nr katalogowy" Width="90" DisplayMemberBinding="{Binding Nrkatalogowy}"/>
+                            <GridViewColumn Header="Dział" Width="90" DisplayMemberBinding="{Binding dział}"/>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+
+                <StackPanel Grid.Column="1">
+                    <Label Content="Magazyn" FontSize="20" HorizontalAlignment="Center" />
+                    <StackPanel>
+                        <Label Content="Przedmiot" HorizontalAlignment="Center"/>
+                        <TextBox Name="PrzedmiotTextBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Nr katalogowy" HorizontalAlignment="Center"/>
+                        <TextBox Name="NrkatalogowyTextBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Dział" HorizontalAlignment="Center"/>
+                        <ComboBox Name="DziałComboBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Ilość" HorizontalAlignment="Center"/>
+                        <TextBox x:Name="IloscTextBox" Margin="5"/>
+                    </StackPanel>
+
+                    <Button Name="AddButton" Content="Dodaj" Margin="5,10,5,5" Click="AddButton_Click"/>
+                    <Button Name="DeleteButton" Content="Usuń" Margin="5,5" Click="DeleteButton_Click"/>
+                    <Button Name="SaveButton" Content="Zapisz" Margin="5,5" Click="SaveButton_Click"/>
+                    <Button Name="LoadButton" Content="Załaduj" Margin="5,5" Click="LoadButton_Click"/>
+
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Wyszukaj" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListView Name ="ListView2" Margin="5" Grid.Column="0" ItemsSource="{Binding SzukanaList}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Przedmiot" Width="90" DisplayMemberBinding="{Binding Przedmiot}"/>
+                            <GridViewColumn Header="Ilość" Width="30" DisplayMemberBinding="{Binding Ilosc}"/>
+                            <GridViewColumn Header="Nr katalogowy" Width="90" DisplayMemberBinding="{Binding Nrkatalogowy}"/>
+                            <GridViewColumn Header="Dział" Width="90" DisplayMemberBinding="{Binding dział}"/>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+                <StackPanel Grid.Column="1">
+                    <Label Content="Wyszukaj" FontSize="20" HorizontalAlignment="Center" />
+                    <StackPanel>
+                        <Label Content="Wpisz nr katalogowy" HorizontalAlignment="Center"/>
+                        <TextBox Name="WyszukajTextBox" Margin="5"/>
+                    </StackPanel>
+
+                    <Button Name="SearchButton" Content="Wyszukaj" Margin="5,10,5,5" Click="SearchButton_Click" />
+
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Sprzedaż" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListView Name ="ListView3" Margin="5" Grid.Column="0" ItemsSource="{Binding MagazynList}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Przedmiot" Width="90" DisplayMemberBinding="{Binding Przedmiot}"/>
+                            <GridViewColumn Header="Ilość" Width="30" DisplayMemberBinding="{Binding Ilosc}"/>
+                            <GridViewColumn Header="Nr katalogowy" Width="90" DisplayMemberBinding="{Binding Nrkatalogowy}"/>
+                            <GridViewColumn Header="Dział" Width="90" DisplayMemberBinding="{Binding dział}"/>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+                <StackPanel Grid.Column="1">
+                    <Label Content="Sprzedaż" FontSize="20" HorizontalAlignment="Center" />
+                    <StackPanel>
+                        <Label Content="Cena" HorizontalAlignment="Center"/>
+                        <TextBox Name="CenaTextBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Ilość" HorizontalAlignment="Center"/>
+                        <TextBox Name="IlośćTextBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Zapłata" HorizontalAlignment="Center"/>
+                        <TextBox Name="ZapłataTextBox" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Reszta" HorizontalAlignment="Center"/>
+                        <TextBlock x:Name="textBlock" TextWrapping="Wrap" HorizontalAlignment="Center" Text="{Binding reszta}"/>
+
+                    </StackPanel>
+                    <Button Name="SaleButton" Content="Sprzedaj" Margin="5,10,5,5" Click="SaleButton_Click"/>
+
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Statystyki" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <StackPanel>
+                        <Label Content="Ilość sprzedanych przedmiotów" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label Content="Uzyskany przychód" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <StackPanel>
+                        <Label>
+                            <TextBlock x:Name="SprzedaneBlock" TextWrapping="Wrap" HorizontalAlignment="Left" Text=""/>
+                        </Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label>
+                            <TextBlock x:Name="PrzychodBlock" TextWrapping="Wrap" HorizontalAlignment="Left" Text=""/>
+                        </Label>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </TabItem>
+
+
+    </TabControl>
+
+
+</Window>

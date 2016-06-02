@@ -1,0 +1,14 @@
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\bin\Debug\Projekt-zaliczenie kursu.exe.config
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\bin\Debug\Projekt-zaliczenie kursu.exe
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\bin\Debug\Projekt-zaliczenie kursu.pdb
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu.csprojResolveAssemblyReference.cache
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\MainWindow.g.cs
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\App.g.cs
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu_MarkupCompile.cache
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu_MarkupCompile.lref
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\MainWindow.baml
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu.g.resources
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt_zaliczenie_kursu.Properties.Resources.resources
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu.csproj.GenerateResource.Cache
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu.exe
+c:\users\lenovo\documents\visual studio 2015\Projects\Projekt-zaliczenie kursu\Projekt-zaliczenie kursu\obj\Debug\Projekt-zaliczenie kursu.pdb
