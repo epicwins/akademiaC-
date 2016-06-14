@@ -1,0 +1,6 @@
+Jest to program magazynowo - sprzeda¿owy. Aby dodaæ jakiœ przedmiot trzeba wejœæ w zak³adkê "Dodawanie artyku³ów". 
+Tam wype³niamy wszystkie pola i dodaj. Aby usun¹æ nale¿y mieæ ju¿ dodany jakiœ przedmiot.
+W zak³adce "Wyszukaj" jest opcja wyszukiwania po numerze katalogowym. 
+W zak³adce "sprzeda¿" wybiera siê element wpisuje cenê oraz iloœæ i ile klient zap³aci³. Je¿eli podane pola s¹ 
+poprawnie wype³nione to nast¹pi odjêcie sprzedanej iloœci z listy. 
+Zak³adka "statystyki" pokazuje ile rzeczy zosta³o sprzedanych i jaki utarg.
